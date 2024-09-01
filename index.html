@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="./js/script.js"></script>
+  </head>
+  <body style="margin: 0; font-family: Verdana">
+    <div id="simscreen">
+      <div id="title"><h3>FUNDAMENTALS OF RESISTORS</h3></div>
+      <style>
+        label {
+          font-size: 14px;
+          font-family: Verdana;
+        }
+        .errorMessage {
+          color: red;
+          margin-top: 5px;
+        }
+      </style>
+
+      <div class="simsubscreen" id="canvas0">
+        <h4 class="incanvas">Objective:</h4>
+        <br />
+        <p class="incanvas" style="font-size: 14px">
+          To understand the fundamentals of resistors and their color code
+          system in order to accurately <br />
+          determine the resistance of a resistor.
+        </p>
+        <br />
+        <br />
+        <br />
+        &nbsp;<span
+          class="tooltip"
+          style="border-bottom: 1px; color: black; top: 20px; cursor: pointer"
+          ><strong>Description:</strong> <br />
+          <!-- &nbsp;<span class="tooltip" style="border-bottom: 1px; color: black; top: 20px; cursor: pointer;"><strong>Description :</strong> <br> <br> -->
+          <p class="para" style="text-align: justify; font-size: 14px">
+            Resistors are essential components in electronics, impeding the flow
+            of electrical current. To determine their resistance, a color code
+            system is used. With four or five colored bands on a resistor, each
+            signifies a numerical value or multiplier. Memorizing the sequence
+            with the acronym BBROYGBVGWSN simplifies decoding, enabling the
+            calculation of resistance.
+          </p>
+          <br />
+
+          <p class="para" style="text-align: justify; font-size: 14px">
+            Understanding the resistor color code is vital for professionals and
+            enthusiasts alike. The coded information on the resistor bands
+            provides quick and precise resistance identification, streamlining
+            electronic circuit work. This standardized system enhances
+            efficiency in electronics, allowing for effective integration of
+            resistors into circuits and facilitating the troubleshooting
+            process. Choosing resistors that can maintain their specified values
+            under different operating conditions, contributing to the
+            reliability and precision of electronic systems.
+          </p>
+        </span>
+      </div>
+
+      <div class="simsubscreen" id="canvas1" style="visibility: hidden">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;1&nbsp;</span>
+        <p class="steptext" style="font-family: Verdana; font-size: 14px">
+          &nbsp;Select Resistor Parameters:
+        </p>
+        <br /><br />
+        <br />
+        <br />
+        <!-- <button id="nextButton1" name="submit" type="button" onclick=""></button> -->
+        <div id="resistorForm">
+          <label for="firstBand">First Band:</label>
+          <select id="firstBand" name="firstBand">
+            <!-- Color options for the resistor bands -->
+
+            <option
+              value="selectColor"
+              style="background-color: #ffffff; color: #000"
+            >
+              Select Color
+            </option>
+            <option
+              value="black"
+              style="background-color: #000; color: #ffffff"
+            >
+              Black
+            </option>
+            <option
+              value="brown"
+              style="background-color: #8b4513; color: #ffffff"
+            >
+              Brown
+            </option>
+            <option
+              value="red"
+              style="background-color: #ff0000; color: #ffffff"
+            >
+              Red
+            </option>
+            <option
+              value="orange"
+              style="background-color: #ffa500; color: #ffffff"
+            >
+              Orange
+            </option>
+            <option
+              value="yellow"
+              style="background-color: #ffff00; color: #000"
+            >
+              Yellow
+            </option>
+            <option
+              value="green"
+              style="background-color: #008000; color: #ffffff"
+            >
+              Green
+            </option>
+            <option
+              value="blue"
+              style="background-color: #0000ff; color: #ffffff"
+            >
+              Blue
+            </option>
+            <option
+              value="violet"
+              style="background-color: #8a2be2; color: #ffffff"
+            >
+              Violet
+            </option>
+            <option
+              value="gray"
+              style="background-color: #808080; color: #ffffff"
+            >
+              Grey
+            </option>
+            <option
+              value="white"
+              style="background-color: #ffffff; color: #000"
+            >
+              White
+            </option>
+          </select>
+
+          <label for="secondBand">Second Band:</label>
+          <select id="secondBand" name="secondBand">
+            <!-- Color options for the resistor bands -->
+
+            <option
+              value="selectColor"
+              style="background-color: #ffffff; color: #000"
+            >
+              Select Color
+            </option>
+            <option
+              value="black"
+              style="background-color: #000; color: #ffffff"
+            >
+              Black
+            </option>
+            <option
+              value="brown"
+              style="background-color: #8b4513; color: #ffffff"
+            >
+              Brown
+            </option>
+            <option
+              value="red"
+              style="background-color: #ff0000; color: #ffffff"
+            >
+              Red
+            </option>
+            <option
+              value="orange"
+              style="background-color: #ffa500; color: #ffffff"
+            >
+              Orange
+            </option>
+            <option
+              value="yellow"
+              style="background-color: #ffff00; color: #000"
+            >
+              Yellow
+            </option>
+            <option
+              value="green"
+              style="background-color: #008000; color: #ffffff"
+            >
+              Green
+            </option>
+            <option
+              value="blue"
+              style="background-color: #0000ff; color: #ffffff"
+            >
+              Blue
+            </option>
+            <option
+              value="violet"
+              style="background-color: #8a2be2; color: #ffffff"
+            >
+              Violet
+            </option>
+            <option
+              value="gray"
+              style="background-color: #808080; color: #ffffff"
+            >
+              Grey
+            </option>
+            <option
+              value="white"
+              style="background-color: #ffffff; color: #000"
+            >
+              White
+            </option>
+          </select>
+
+          <label for="thirdBand">Third Band (Multiplier):</label>
+          <select id="thirdBand" name="thirdBand">
+            <!-- Color options for the resistor bands -->
+
+            <option
+              value="selectColor"
+              style="background-color: #ffffff; color: #000"
+            >
+              Select Color
+            </option>
+            <option
+              value="black"
+              style="background-color: #000; color: #ffffff"
+            >
+              Black
+            </option>
+            <option
+              value="brown"
+              style="background-color: #8b4513; color: #ffffff"
+            >
+              Brown
+            </option>
+            <option
+              value="red"
+              style="background-color: #ff0000; color: #ffffff"
+            >
+              Red
+            </option>
+            <option
+              value="orange"
+              style="background-color: #ffa500; color: #ffffff"
+            >
+              Orange
+            </option>
+            <option
+              value="yellow"
+              style="background-color: #ffff00; color: #000"
+            >
+              Yellow
+            </option>
+            <option
+              value="green"
+              style="background-color: #008000; color: #ffffff"
+            >
+              Green
+            </option>
+            <option
+              value="blue"
+              style="background-color: #0000ff; color: #ffffff"
+            >
+              Blue
+            </option>
+            <!-- <option value="violet" style="background-color: #8A2BE2; color: #FFFFFF;">Violet</option>
+      <option value="gray" style="background-color: #808080; color: #FFFFFF;">Grey</option>
+      <option value="white" style="background-color: #FFFFFF; color: #000;">White</option> -->
+            <option value="gold" style="background-color: #ffd700; color: #000">
+              gold
+            </option>
+            <option
+              value="silver"
+              style="background-color: #c0c0c0; color: #000"
+            >
+              Silver
+            </option>
+          </select>
+
+          <label for="fourthBand">Fourth Band (Tolerance):</label>
+          <select id="fourthBand" name="fourthBand">
+            <!-- Color options for the resistor bands -->
+
+            <option
+              value="selectColor"
+              style="background-color: #ffffff; color: #000"
+            >
+              Select Color
+            </option>
+            <!-- <option value="black" style="background-color: #000; color: #FFFFFF;">Black</option> -->
+            <option
+              value="brown"
+              style="background-color: #8b4513; color: #ffffff"
+            >
+              Brown
+            </option>
+            <option
+              value="red"
+              style="background-color: #ff0000; color: #ffffff"
+            >
+              Red
+            </option>
+            <option
+              value="orange"
+              style="background-color: #ffa500; color: #ffffff"
+            >
+              Orange
+            </option>
+            <option
+              value="yellow"
+              style="background-color: #ffff00; color: #000"
+            >
+              Yellow
+            </option>
+            <option
+              value="green"
+              style="background-color: #008000; color: #ffffff"
+            >
+              Green
+            </option>
+            <!-- <option value="blue" style="background-color: #0000FF; color: #FFFFFF;">Blue</option>
+      <option value="violet" style="background-color: #8A2BE2; color: #FFFFFF;">Violet</option>
+      <option value="gray" style="background-color: #808080; color: #FFFFFF;">Grey</option>
+      <option value="white" style="background-color: #FFFFFF; color: #000;">White</option>-->
+            <option value="gold" style="background-color: #ffd700; color: #000">
+              Gold
+            </option>
+            <option
+              value="silver"
+              style="background-color: #c0c0c0; color: #000"
+            >
+              Silver
+            </option>
+            <option
+              value="nocolor"
+              style="background-color: #ffffff; color: #000"
+            >
+              No Color
+            </option>
+          </select>
+
+          <button onclick="calculateResistance()">Calculate Resistance</button>
+          <p id="result"></p>
+          <div id="errorMessage"></div>
+        </div>
+      </div>
+    </div>
+    <div id="nav">
+      <img id="nextButton" onclick="navNext()" src="images/Next.png" alt="" />
+    </div>
+    <div id="copyright">
+      &copy; EMBRACE - NITK
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </div>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  </body>
+</html>

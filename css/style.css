@@ -1,0 +1,166 @@
+/*mathstyle.css*/
+
+#simscreen {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 600px;
+  width: 800px;
+  border: solid 1px;
+}
+
+#title {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 40px;
+  font-size: 24px;
+  text-align: center;
+  background-color: black;
+  font-family: verdana;
+  color: White;
+  text-transform: uppercase;
+}
+
+#title h3 {
+  padding-top: 2px;
+  margin: 0px;
+}
+
+.simsubscreen {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  height: 530px;
+  width: 745px;
+}
+
+.incanvas {
+  margin: 5px 0 0 5px;
+  padding: 0;
+}
+
+#nextButton {
+  position: absolute;
+  left: 750px;
+  top: 530px;
+  cursor: pointer;
+}
+
+.circlebg {
+  border-radius: 100%;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  background: #000;
+}
+
+.steptext {
+  display: inline;
+  font-size: 14px;
+}
+
+#copyright {
+  position: absolute;
+  left: 280px;
+  top: 580px;
+  font-size: 12px;
+}
+
+/* css */
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+  margin-left: 230px;
+}
+
+.para {
+  width: 705px;
+}
+
+#nextButton1 {
+  position: absolute;
+  left: 320px;
+  top: 400px;
+  cursor: pointer;
+}
+
+/* comments */
+.simsubscreen1 {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  height: 530px;
+  width: 745px;
+}
+
+body {
+  font-family: "Verdana";
+
+  margin: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#resistorForm {
+  /* background-color: #fff; */
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-right: 60px;
+  margin-right: 20px;
+  margin-top: -42px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: -1px;
+  display: block;
+}
+
+select {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #808080;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#firstBand,
+#secondBand,
+#thirdBand,
+#fourthBand {
+  height: 41px;
+  width: 200px;
+}
+
+#fourthBand {
+  margin-left: 180px;
+}

@@ -62,9 +62,14 @@
 
 #copyright {
   position: absolute;
-  left: 280px;
+  left: 50px;
   top: 580px;
   font-size: 12px;
+}
+
+.cp {
+  font-size: 16px;
+  font-weight: 900;
 }
 
 /* css */
